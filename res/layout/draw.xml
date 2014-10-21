@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="18dp"
+        android:background="#1E90FF"
+        android:minHeight="60dp"
+        android:minWidth="200dp"
+        android:text="ほぞんした絵"
+        android:textColor="#FFFF00"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/modoru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/button1"
+        android:background="#FFFF00"
+        android:minHeight="110dp"
+        android:minWidth="20dp"
+        android:text="もどる"
+        android:textSize="25sp"
+        android:width="40dp" />
+
+</RelativeLayout>
