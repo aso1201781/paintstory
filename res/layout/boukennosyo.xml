@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/modoru2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFF00"
+        android:minHeight="110dp"
+        android:minWidth="20dp"
+        android:text="もどる"
+        android:textSize="25dp"
+        android:width="40dip" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:src="@drawable/pantsu2" />
+
+    <Button
+        android:id="@+id/hazime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/modorumain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:background="#ADD8E6"
+        android:minHeight="100dp"
+        android:minLines="3"
+        android:minWidth="180dp"
+        android:text="はじめから" />
+
+    <Button
+        android:id="@+id/tsuduki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hazime"
+        android:layout_below="@+id/hazime"
+        android:layout_marginTop="42dp"
+        android:background="#ADD8E6"
+        android:minHeight="100dp"
+        android:minWidth="180dp"
+        android:text="つづきから" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tsuduki"
+        android:scaleType="fitCenter"
+        android:src="@drawable/punyan4" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/modoru11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="17dp"
+        android:background="#FFFF00"
+        android:minHeight="110dp"
+        android:minWidth="20dp"
+        android:text="もどる"
+        android:textSize="25dp"
+        android:width="40dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/modoru11"
+        android:layout_alignBottom="@+id/modoru11"
+        android:layout_alignLeft="@+id/yasukokugo"
+        android:text="きょうかをえらんでね"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/yasusansuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/yasukokugo"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+        android:background="#1E90FF"
+        android:minHeight="60dp"
+        android:minWidth="100dp"
+        android:text="さんすう" />
+
+    <Button
+        android:id="@+id/yasukokugo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/modoru11"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/yasuseikatsu"
+        android:background="#F08080"
+        android:minHeight="60dp"
+        android:minWidth="100dp"
+        android:text="こくご" />
+
+    <Button
+        android:id="@+id/yasuseikatsu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_toLeftOf="@+id/modoru11"
+        android:background="#228B22"
+        android:minHeight="60dp"
+        android:minWidth="100dp"
+        android:text="せいかつ" />
+
+    <Button
+        android:id="@+id/yasuzenbu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/yasusansuu"
+        android:layout_marginTop="40dp"
+        android:background="#F4A460"
+        android:minHeight="60dp"
+        android:minWidth="100dp"
+        android:text="ぜんぶ" />
+
+</RelativeLayout>

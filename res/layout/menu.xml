@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/modoru3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFFF00"
+        android:minHeight="110dp"
+        android:minWidth="20dp"
+        android:text="もどる"
+        android:textSize="25dp"
+        android:width="40dp" />
+
+    <Button
+        android:id="@+id/illust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/modoru3"
+        android:layout_centerHorizontal="true"
+        android:background="#ADD8E6"
+        android:minHeight="80dp"
+        android:minWidth="170dp"
+        android:text="えをみる" />
+
+    <Button
+        android:id="@+id/seiseki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/illust"
+        android:layout_centerVertical="true"
+        android:background="#ADD8E6"
+        android:minHeight="80dp"
+        android:minWidth="170dp"
+        android:text="せいせきをみる" />
+
+    <Button
+        android:id="@+id/torofi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seiseki"
+        android:layout_below="@+id/seiseki"
+        android:layout_marginTop="49dp"
+        android:background="#ADD8E6"
+        android:minHeight="80dp"
+        android:minWidth="170dp"
+        android:text="トロフィーをみる" />
+
+</RelativeLayout>
