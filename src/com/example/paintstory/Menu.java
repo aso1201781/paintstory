@@ -1,6 +1,7 @@
 package com.example.paintstory;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,19 +35,19 @@ View.OnClickListener{
 	public void onClick(View v) {
 		// TODO 自動生成されたメソッド・スタブ
 		switch(v.getId()){
-/*		case R.id.seiseki:
-			Intent intent5 = new Intent(Menu.this,Seiseki.class);
+		case R.id.seiseki:
+			Intent intent5 = new Intent(Menu.this,Kiroku.class);
 			startActivity(intent5);
 		case R.id.torofi:
 			Intent intent6 = new Intent(Menu.this,Torotoro1.class);
 			startActivity(intent6);
 		case R.id.illust:
-			Intent intent7 = new Intent(Menu.this,.class);
+			Intent intent7 = new Intent(Menu.this,Draw.class);
 			startActivity(intent7);
 		case R.id.modoru3:
-			Intent intent4 = new Intent(Menu.this,.class);
+			Intent intent4 = new Intent(Menu.this,Start.class);
 			startActivity(intent4);
-*/
+
 	}
 
 	}

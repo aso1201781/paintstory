@@ -33,10 +33,11 @@ public final class R {
     public static final class id {
         public static final int RelativeLayout1=0x7f080000;
         public static final int Space1=0x7f080039;
-        public static final int action_settings=0x7f080042;
+        public static final int action_settings=0x7f080043;
         public static final int button1=0x7f08000e;
         public static final int editText1=0x7f080004;
         public static final int editText2=0x7f080002;
+        public static final int ewokaku=0x7f08003e;
         public static final int goroku=0x7f080011;
         public static final int hazime=0x7f08000b;
         public static final int hukokugo=0x7f08001b;
@@ -49,7 +50,7 @@ public final class R {
         public static final int illust=0x7f080028;
         public static final int imageView1=0x7f08000a;
         public static final int imageView2=0x7f080009;
-        public static final int kettei=0x7f080041;
+        public static final int kettei=0x7f080042;
         public static final int kiroku=0x7f08003b;
         public static final int login=0x7f080003;
         public static final int mainstart=0x7f08003d;
@@ -62,8 +63,8 @@ public final class R {
         public static final int modoru8=0x7f08001a;
         public static final int modoruid=0x7f080014;
         public static final int modorumain=0x7f08000c;
-        public static final int modorutouroku=0x7f08003f;
-        public static final int nametextbox=0x7f080040;
+        public static final int modorutouroku=0x7f080040;
+        public static final int nametextbox=0x7f080041;
         public static final int naneigo=0x7f080026;
         public static final int nankokugo=0x7f080023;
         public static final int nanrika=0x7f080025;
@@ -77,7 +78,7 @@ public final class R {
         public static final int textView3=0x7f080007;
         public static final int textView4=0x7f08003a;
         public static final int textView5=0x7f08003c;
-        public static final int textView6=0x7f08003e;
+        public static final int textView6=0x7f08003f;
         public static final int torofi=0x7f08002a;
         public static final int tsuduki=0x7f08000d;
         public static final int txt1=0x7f08002b;

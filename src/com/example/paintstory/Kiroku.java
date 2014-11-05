@@ -9,16 +9,16 @@ import android.view.View;
 import android.widget.Button;
 public class Kiroku extends Activity implements View.OnClickListener  {
 
-	
+
 	SQLiteDatabase sdb = null;
 	MySQLiteOpenHelper helper = null;
-	
-	
-	
+
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.kiroku);
+		setContentView(R.layout.seiseki);
 	}
 
 	@Override
@@ -52,7 +52,7 @@ public class Kiroku extends Activity implements View.OnClickListener  {
 			case R.id.modoru: // LinearLayoutボタンが押された
 
 				// インテントのインスタンス生成
-				intent = new Intent(Kiroku.this, Torotoro1.class);
+				intent = new Intent(Kiroku.this, Menu.class);
 				break;
 	}
 		startActivity(intent);

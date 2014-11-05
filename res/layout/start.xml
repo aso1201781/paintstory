@@ -44,18 +44,6 @@
         android:layout_toRightOf="@+id/kiroku"
         android:src="@drawable/panpakakun" />
 
-    <Button
-        android:id="@+id/kiroku"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="142dp"
-        android:background="#ADD8E6"
-        android:minHeight="70dp"
-        android:minWidth="140dp"
-        android:text="きろく" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -111,4 +99,27 @@
         android:minWidth="140dp"
         android:text="スタート" />
 
+    <Button
+        android:id="@+id/kiroku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="#ADD8E6"
+        android:minHeight="70dp"
+        android:minWidth="140dp"
+        android:text="きろく" />
+
+        <Button
+            android:id="@+id/ewokaku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/kiroku"
+            android:layout_below="@+id/imageView2"
+            android:background="#ADD8E6"
+            android:minHeight="70dp"
+            android:minWidth="140dp"
+            android:text="えをかく" />
+    
 </RelativeLayout>

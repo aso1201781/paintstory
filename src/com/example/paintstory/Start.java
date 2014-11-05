@@ -24,6 +24,9 @@ View.OnClickListener
 		mainstart.setOnClickListener(this);
 		Button kiroku = (Button)findViewById(R.id.kiroku);
 		kiroku.setOnClickListener(this);
+		Button ewokaku = (Button)findViewById(R.id.ewokaku);
+		ewokaku.setOnClickListener(this);
+
 	}
 
 	@Override
@@ -36,6 +39,9 @@ View.OnClickListener
 		case R.id.kiroku:
 			Intent intent2 = new Intent(Start.this,Kiroku.class);
 			startActivity(intent2);
+		case R.id.ewokaku:
+			Intent intent111 = new Intent(Start.this,Boukennosyo.class);
+			startActivity(intent111);
 
 		}
 	}

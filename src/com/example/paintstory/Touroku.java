@@ -52,15 +52,17 @@ View.OnClickListener
 		String user_name = nametextbox.getText().toString();
 		if(user_name!=null && user_name.isEmpty()){
 			helper.SQLiteinsertuser(sdb,user_name);
+			helper.user_get_id(sdb,user_name);
 		}
 			Intent intent1 = new Intent(Touroku.this,Id.class);
+			intent1.putExtra("user_id",user_name);
 			startActivity(intent1);
 
 
 
 
 		case R.id.modorutouroku:
-			Intent intent2 = new Intent(Touroku.this,MainActivity.class);
+			Intent intent2 = new Intent(Touroku.this,Id.class);
 			startActivity(intent2);
 
 		}
