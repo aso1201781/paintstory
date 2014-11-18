@@ -15,7 +15,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText2"
+        android:layout_above="@+id/edttxt2"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="22dp"
         android:text="IDを入力してね"
@@ -60,7 +60,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edttxt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/login"
@@ -79,5 +79,22 @@
 
         <requestFocus />
     </EditText>
+
+    <Button
+        android:id="@+id/modorutouroku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="もどる" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/idtsukuru"
+        android:layout_marginTop="18dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

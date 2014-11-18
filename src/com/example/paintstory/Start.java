@@ -36,13 +36,15 @@ View.OnClickListener
 		case R.id.mainstart:
 			Intent intent1 = new Intent(Start.this,Boukennosyo.class);
 			startActivity(intent1);
+			break;
 		case R.id.kiroku:
-			Intent intent2 = new Intent(Start.this,Kiroku.class);
+			Intent intent2 = new Intent(Start.this,Menu.class);
 			startActivity(intent2);
+			break;
 		case R.id.ewokaku:
-			Intent intent111 = new Intent(Start.this,Boukennosyo.class);
+			Intent intent111 = new Intent(Start.this,Touchtest.class);
 			startActivity(intent111);
-
+			break;
 		}
 	}
 

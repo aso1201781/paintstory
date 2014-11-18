@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 public class Kiroku extends Activity implements View.OnClickListener  {
 
 
@@ -32,7 +33,16 @@ public class Kiroku extends Activity implements View.OnClickListener  {
 	protected void onResume() {
 		// TODO 自動生成されたメソッド・スタブ
 		super.onResume();
+		Intent intent = this.getIntent();
+		String strHitokoto = intent.getStringExtra("id");
+		String strHitokoto2 = intent.getStringExtra("name");
 		Button btnRELATIVE = (Button)findViewById(R.id.modoru);
+
+		TextView text = (TextView)findViewById(R.id.textView1);
+		TextView text2 = (TextView)findViewById(R.id.textView2);
+		text.setText(strHitokoto);
+		text2.setText(strHitokoto2);
+
 		btnRELATIVE.setOnClickListener(this);
 		if(sdb == null){
 			helper = new MySQLiteOpenHelper(getApplicationContext());

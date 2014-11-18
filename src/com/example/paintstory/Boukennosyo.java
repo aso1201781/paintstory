@@ -37,13 +37,16 @@ View.OnClickListener{
 		case R.id.hazime:
 			Intent intent3 = new Intent(Boukennosyo.this,Gakunen.class);
 			startActivity(intent3);
+			break;
+
 		case R.id.tsuduki:
 		//	Intent intent4 = new Intent(Boukennosyo.this,船津.class);
 		//	startActivity(intent4);
+		//  break;
 		case R.id.modoru2:
-			Intent intent5 = new Intent(Boukennosyo.this,MainActivity.class);
+			Intent intent5 = new Intent(Boukennosyo.this,Start.class);
 			startActivity(intent5);
-
+			break;
 	}
 
 }

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">paintstory</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+ <string name="hello">Hello World, DrawBm!</string>
+ <string name="app_name">おえかき</string>
+ <string name="clean">消す</string>
+ <string name="save">保存</string>
+ <string name="finish">終わる</string>
 
 </resources>

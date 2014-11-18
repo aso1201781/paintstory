@@ -32,7 +32,7 @@ View.OnClickListener{
 		case R.id.modoruid:
 			Intent intent18 = new Intent(Id.this,MainActivity.class);
 			startActivity(intent18);
-
+			break;
 	}
 	}
 

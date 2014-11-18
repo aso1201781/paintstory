@@ -38,16 +38,19 @@ View.OnClickListener{
 		case R.id.seiseki:
 			Intent intent5 = new Intent(Menu.this,Kiroku.class);
 			startActivity(intent5);
+			break;
 		case R.id.torofi:
 			Intent intent6 = new Intent(Menu.this,Torotoro1.class);
 			startActivity(intent6);
+			break;
 		case R.id.illust:
 			Intent intent7 = new Intent(Menu.this,Draw.class);
 			startActivity(intent7);
+			break;
 		case R.id.modoru3:
 			Intent intent4 = new Intent(Menu.this,Start.class);
 			startActivity(intent4);
-
+			break;
 	}
 
 	}

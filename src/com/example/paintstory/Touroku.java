@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
+import android.widget.TextView;
 public class Touroku extends Activity implements
 View.OnClickListener
 {
@@ -30,6 +30,7 @@ View.OnClickListener
 		Button modorutouroku = (Button)findViewById(R.id.modorutouroku);
 		modorutouroku.setOnClickListener(this);
 
+
 		if(sdb == null){
 			helper = new MySQLiteOpenHelper(getApplicationContext());
 		}
@@ -46,26 +47,41 @@ View.OnClickListener
 
 
 		switch(v.getId()){
-		case R.id.kettei:
-
+			case R.id.kettei:
+			TextView text = (TextView)findViewById(R.id.textView2);
 			EditText nametextbox = (EditText)findViewById(R.id.nametextbox);
-		String user_name = nametextbox.getText().toString();
-		if(user_name!=null && user_name.isEmpty()){
-			helper.SQLiteinsertuser(sdb,user_name);
-			helper.user_get_id(sdb,user_name);
-		}
-			Intent intent1 = new Intent(Touroku.this,Id.class);
-			intent1.putExtra("user_id",user_name);
-			startActivity(intent1);
+			String inputMsg = nametextbox.getText().toString();
+
+				if(inputMsg!=null){
+					//ユーザ表にユーザ情報を新規登録
+					helper.insertHitokoto(sdb,inputMsg);
+					text.setText("あなたの名前は"+inputMsg);
+					String rtString = helper.selectHitokoto(sdb,inputMsg);
+					Intent intent = new Intent(Touroku.this,Kiroku.class);
+					intent.putExtra("id",rtString);
+					intent.putExtra("name", inputMsg);
+					startActivity(intent);
+					break;
+				}else{text.setText("文字を入力して");}
+					//入力した名前をキーにユーザＩＤを取得
+				//	SQLiteCursor user_id =helper.user_get_id(sdb,user_name);
+
+				//		if(user_id != null){
+					//		text.setText(user_name+"さんのユーザＩＤは"+user_id+"です");
+						//}else{text.setText("ID取得に失敗しました");
+					//	}
+
+	//		}else{text.setText(user_name);}
 
 
 
-
-		case R.id.modorutouroku:
-			Intent intent2 = new Intent(Touroku.this,Id.class);
+			case R.id.modorutouroku:
+			Intent intent2 = new Intent(Touroku.this,MainActivity.class);
 			startActivity(intent2);
+			break;
+
+
 
 		}
 	}
-
 }

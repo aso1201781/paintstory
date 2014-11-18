@@ -44,7 +44,7 @@ public void onClick(View v) {
 				case R.id.modoru: // LinearLayoutボタンが押された
 
 					// インテントのインスタンス生成
-					intent = new Intent(Torotoro1.this, Draw.class);
+					intent = new Intent(Torotoro1.this, Menu.class);
 					break;
 		}
 			startActivity(intent);

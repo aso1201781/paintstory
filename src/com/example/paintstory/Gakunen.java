@@ -37,15 +37,19 @@ View.OnClickListener{
 		case R.id.ichini:
 			Intent intent8 = new Intent(Gakunen.this,Kyouka12.class);
 			startActivity(intent8);
+			break;
 		case R.id.sanshi:
 			Intent intent9 = new Intent(Gakunen.this,Kyouka34.class);
 			startActivity(intent9);
+			break;
 		case R.id.goroku:
 			Intent intent10 = new Intent(Gakunen.this,Kyouka56.class);
 			startActivity(intent10);
+			break;
 		case R.id.modoru4:
 			Intent intent11 = new Intent(Gakunen.this,Boukennosyo.class);
 			startActivity(intent11);
+			break;
 			}
 		}
 }

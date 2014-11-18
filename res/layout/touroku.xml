@@ -41,8 +41,9 @@
         android:id="@+id/kettei"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/nametextbox"
+        android:layout_alignLeft="@+id/nametextbox"
         android:layout_below="@+id/nametextbox"
+        android:layout_marginLeft="18dp"
         android:layout_marginTop="34dp"
         android:text="けってい" />
 
