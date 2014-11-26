@@ -20,8 +20,8 @@ View.OnClickListener{
 	protected void onResume() {
 		// TODO 自動生成されたメソッド・スタブ
 		super.onResume();
-		Button seiseki = (Button)findViewById(R.id.seiseki);
-		seiseki.setOnClickListener(this);
+	//	Button seiseki = (Button)findViewById(R.id.seiseki);
+	//	seiseki.setOnClickListener(this);
 		Button torofi = (Button)findViewById(R.id.torofi);
 		torofi.setOnClickListener(this);
 		Button illust = (Button)findViewById(R.id.illust);
@@ -35,10 +35,10 @@ View.OnClickListener{
 	public void onClick(View v) {
 		// TODO 自動生成されたメソッド・スタブ
 		switch(v.getId()){
-		case R.id.seiseki:
-			Intent intent5 = new Intent(Menu.this,Kiroku.class);
-			startActivity(intent5);
-			break;
+	//	case R.id.seiseki:
+		//	Intent intent5 = new Intent(Menu.this,Kiroku.class);
+			//startActivity(intent5);
+	//		break;
 		case R.id.torofi:
 			Intent intent6 = new Intent(Menu.this,Torotoro1.class);
 			startActivity(intent6);

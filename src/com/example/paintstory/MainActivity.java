@@ -27,8 +27,8 @@ View.OnClickListener
 	protected void onResume() {
 		// TODO 自動生成されたメソッド・スタブ
 		super.onResume();
-		Button modoru = (Button)findViewById(R.id.modorutouroku);
-		modoru.setOnClickListener(this);
+//		Button modoru = (Button)findViewById(R.id.modorutouroku);
+//		modoru.setOnClickListener(this);
 		Button login = (Button)findViewById(R.id.login);
 		login.setOnClickListener(this);
 		Button idtsukuru = (Button)findViewById(R.id.idtsukuru);
@@ -77,6 +77,7 @@ View.OnClickListener
 			if(name!=null && !name.isEmpty() &&id!=null && !id.isEmpty())
 			{
 				
+				
 				String rtString2 = helper.ninsyo(sdb,id,name);
 				//Log.d("----",rtString2);
 				if(rtString2.equals(name)){
@@ -84,10 +85,10 @@ View.OnClickListener
 					startActivity(intent1);
 					}else{
 					
-					 abc.setText("あなたは会員じゃないです！");
+					 abc.setText("なまえかしゅっせきばんごうがまちがってるよ！");
 			    	}
 			}else{
-					abc.setText("なまえ、ＩＤを入力しわすれてます！");
+					abc.setText("なまえ、しゅっせきばんごうを入力しわすれてるよ！");
 				 }
 			
 		
@@ -103,10 +104,7 @@ View.OnClickListener
 		    break;
 			
 			
-			case R.id.modorutouroku:
-				Intent intent3 = new Intent(MainActivity.this,Start.class);
-				startActivity(intent3);
-				break;
+		
 			}
 		    
 		    

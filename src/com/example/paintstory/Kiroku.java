@@ -63,9 +63,11 @@ public class Kiroku extends Activity implements View.OnClickListener  {
 
 				// インテントのインスタンス生成
 				intent = new Intent(Kiroku.this, Menu.class);
+				startActivity(intent);
 				break;
+			
 	}
-		startActivity(intent);
+		
 
 
 	}

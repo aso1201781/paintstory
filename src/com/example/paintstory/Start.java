@@ -34,7 +34,7 @@ View.OnClickListener
 		// TODO 自動生成されたメソッド・スタブ
 		switch(v.getId()){
 		case R.id.mainstart:
-			Intent intent1 = new Intent(Start.this,Boukennosyo.class);
+			Intent intent1 = new Intent(Start.this,Gakunen.class);
 			startActivity(intent1);
 			break;
 		case R.id.kiroku:

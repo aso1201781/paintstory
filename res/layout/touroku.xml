@@ -6,32 +6,31 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="109dp"
-        android:text="きみのなまえを入れてね"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:text="きみだけの"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <Button
-        android:id="@+id/modorutouroku"
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="18dp"
-        android:text="もどる" />
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="しゅっせきばんごうをつくるよ！"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/nametextbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
+        android:layout_centerVertical="true"
         android:ems="10" >
 
         <requestFocus />
@@ -41,10 +40,36 @@
         android:id="@+id/kettei"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/modorutouroku"
+        android:layout_alignBottom="@+id/modorutouroku"
+        android:layout_alignRight="@+id/textView1"
+        android:text="けってい" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nametextbox"
+        android:layout_alignLeft="@+id/nametextbox"
+        android:layout_marginBottom="24dp"
+        android:text="きみのなまえを入れてね"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/modorutouroku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/nametextbox"
         android:layout_below="@+id/nametextbox"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="34dp"
-        android:text="けってい" />
+        android:layout_marginTop="59dp"
+        android:text="もどる" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/modorutouroku"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

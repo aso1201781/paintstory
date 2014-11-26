@@ -29,7 +29,7 @@ View.OnClickListener
 		kettei.setOnClickListener(this);
 		Button modorutouroku = (Button)findViewById(R.id.modorutouroku);
 		modorutouroku.setOnClickListener(this);
-
+		
 
 		if(sdb == null){
 			helper = new MySQLiteOpenHelper(getApplicationContext());
@@ -40,29 +40,37 @@ View.OnClickListener
 			return;
 		}
 	}
-
+	
 	@Override
 	public void onClick(View v) {
 		// TODO 自動生成されたメソッド・スタブ
 
-
+	
 		switch(v.getId()){
 			case R.id.kettei:
+			String abc = "くさや";
 			TextView text = (TextView)findViewById(R.id.textView2);
 			EditText nametextbox = (EditText)findViewById(R.id.nametextbox);
 			String inputMsg = nametextbox.getText().toString();
 
-				if(inputMsg!=null){
+				if(inputMsg!=null && !inputMsg.isEmpty()){
 					//ユーザ表にユーザ情報を新規登録
-					helper.insertHitokoto(sdb,inputMsg);
-					text.setText("あなたの名前は"+inputMsg);
-					String rtString = helper.selectHitokoto(sdb,inputMsg);
-					Intent intent = new Intent(Touroku.this,Kiroku.class);
-					intent.putExtra("id",rtString);
-					intent.putExtra("name", inputMsg);
-					startActivity(intent);
-					break;
-				}else{text.setText("文字を入力して");}
+					String a = helper.juhukusagashi(sdb,inputMsg);
+					if(a.equals(abc)){
+						helper.insertHitokoto(sdb,inputMsg);
+						text.setText("あなたの名前は"+inputMsg);
+						String rtString = helper.selectHitokoto(sdb,inputMsg);
+						Intent intent = new Intent(Touroku.this,Kiroku.class);
+						intent.putExtra("id",rtString);
+						intent.putExtra("name", inputMsg);
+						startActivity(intent);
+						break;
+					}
+						else{text.setText("おなじなまえのともだちがもういるよ！ちがう名前をとうろくしてね");
+						break;
+						}
+				}else{text.setText("なまえがはいってないよ！！");
+	    	break;}
 					//入力した名前をキーにユーザＩＤを取得
 				//	SQLiteCursor user_id =helper.user_get_id(sdb,user_name);
 

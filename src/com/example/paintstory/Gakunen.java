@@ -46,10 +46,7 @@ View.OnClickListener{
 			Intent intent10 = new Intent(Gakunen.this,Kyouka56.class);
 			startActivity(intent10);
 			break;
-		case R.id.modoru4:
-			Intent intent11 = new Intent(Gakunen.this,Boukennosyo.class);
-			startActivity(intent11);
-			break;
+	
 			}
 		}
 }

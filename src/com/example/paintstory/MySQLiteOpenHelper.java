@@ -70,7 +70,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 
 		//トロフィー表
 		db.execSQL("CREATE TABLE IF NOT EXISTS " +
-				"trophy (trophy_id INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL , trophy_name TEXT  NOT NULL )");
+				"trophy (trophy_id INTEGER PRIMARY KEY  NOT NULL , trophy_name TEXT  NOT NULL )");
 
 
 		//クリア表
@@ -81,7 +81,15 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 		db.execSQL("CREATE TABLE IF NOT EXISTS " +
 				"user (_id INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL , user_name TEXT ,clear_count INTEGER )");
 
-
+		db.execSQL("insert into trophy(trophy_id,trophy_name) values (0001,'せいま');");
+		  
+		  db.execSQL("insert into trophy(trophy_id,trophy_name) values (0002,'としたか');");
+		  
+		  db.execSQL("insert into trophy(trophy_id,trophy_name) values (0003,'のりあき');");
+		  
+		  db.execSQL("insert into trophy(trophy_id,trophy_name) values (0004,'しょうた');");
+		  
+		  db.execSQL("insert into trophy(trophy_id,trophy_name) values (0005,'うおおお');");
 
 	}
 
@@ -118,6 +126,42 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 			//db.execSQL("drop table play_record");
 			//  onCreate(db);
 		}
+	
+	
+	public String trophy(SQLiteDatabase db,String name){
+		String rtString2 = null;
+		String sqlstr = "SELECT trophy_id, trophy_name FROM trophy WHERE trophy_name = '"+name+"'; ";
+		Log.d("-mysql-",sqlstr);
+			try {
+				SQLiteCursor cursor = (SQLiteCursor)db.rawQuery(sqlstr, null);
+
+
+			      if(cursor.getCount()!=0)
+			        {cursor.moveToFirst();
+
+
+			            	rtString2 = cursor.getString(1);
+			            }else{
+			            	rtString2 = "くさや";
+
+			            }
+
+
+
+					} catch (SQLException e) {
+					Log.e ("ERROR", e.toString());
+			}finally{
+				//既にカーソルもcloseしてあるので何もしない。
+			}
+			//Log.d("-mysql-",rtString2);
+		return rtString2;
+	}
+	
+	
+	
+	
+	
+	
 	public void insertHitokoto(SQLiteDatabase db, String inputMsg){
 		String sqlstr = " insert into Hitokoto (phrase) values('" + inputMsg + "'); ";
 			try {
@@ -162,6 +206,34 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 	}
 
 
+	public String juhukusagashi(SQLiteDatabase db,String name){
+		String rtString2 = null;
+		String sqlstr = "SELECT _id, phrase FROM Hitokoto WHERE   phrase = '"+name+"'; ";
+		Log.d("-mysql-",sqlstr);
+			try {
+				SQLiteCursor cursor = (SQLiteCursor)db.rawQuery(sqlstr, null);
+
+
+			      if(cursor.getCount()!=0)
+			        {cursor.moveToFirst();
+
+
+			            	rtString2 = cursor.getString(1);
+			            }else{
+			            	rtString2 = "くさや";
+
+			            }
+
+
+
+					} catch (SQLException e) {
+					Log.e ("ERROR", e.toString());
+			}finally{
+				//既にカーソルもcloseしてあるので何もしない。
+			}
+			//Log.d("-mysql-",rtString2);
+		return rtString2;
+	}
 
 
 
