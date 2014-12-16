@@ -22,13 +22,26 @@ public final class R {
     }
     public static final class drawable {
         public static final int aaa=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int mugiwara=0x7f020002;
-        public static final int panpakakun=0x7f020003;
-        public static final int pantsu2=0x7f020004;
-        public static final int punyan=0x7f020005;
-        public static final int punyan2=0x7f020006;
-        public static final int punyan4=0x7f020007;
+        public static final int hennano=0x7f020001;
+        public static final int hitsuji_kotatsu=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int kawaiibouya=0x7f020004;
+        public static final int kawaiibouyabtn=0x7f020005;
+        public static final int koinukousagibtn=0x7f020006;
+        public static final int kuma103=0x7f020007;
+        public static final int mugiwara=0x7f020008;
+        public static final int nhk=0x7f020009;
+        public static final int nhkbtn=0x7f02000a;
+        public static final int nyanko=0x7f02000b;
+        public static final int oyabin=0x7f02000c;
+        public static final int panpakakun=0x7f02000d;
+        public static final int pantsu2=0x7f02000e;
+        public static final int punyan=0x7f02000f;
+        public static final int punyan2=0x7f020010;
+        public static final int punyan4=0x7f020011;
+        public static final int sotowaku=0x7f020012;
+        public static final int teshitabtn=0x7f020013;
+        public static final int tokoroten=0x7f020014;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f080000;
@@ -36,7 +49,7 @@ public final class R {
         public static final int buttonda=0x7f080010;
         public static final int editText1=0x7f080008;
         public static final int edttxt2=0x7f080004;
-        public static final int ewokaku=0x7f080031;
+        public static final int ewokaku=0x7f08002f;
         public static final int goroku=0x7f080012;
         public static final int hazime=0x7f08000d;
         public static final int hukokugo=0x7f08001c;
@@ -46,16 +59,16 @@ public final class R {
         public static final int huzenbu=0x7f080020;
         public static final int ichini=0x7f080014;
         public static final int idtsukuru=0x7f080002;
-        public static final int illust=0x7f080029;
+        public static final int illust=0x7f08002a;
         public static final int imageView1=0x7f08000c;
         public static final int imageView2=0x7f08000b;
         public static final int item1=0x7f080038;
         public static final int item2=0x7f080039;
         public static final int item3=0x7f08003a;
         public static final int kettei=0x7f080036;
-        public static final int kiroku=0x7f08002f;
+        public static final int kiroku=0x7f080030;
         public static final int login=0x7f080005;
-        public static final int mainstart=0x7f080030;
+        public static final int mainstart=0x7f080031;
         public static final int modoru=0x7f08002b;
         public static final int modoru11=0x7f080016;
         public static final int modoru2=0x7f08000a;
@@ -67,12 +80,12 @@ public final class R {
         public static final int modorumain=0x7f08000e;
         public static final int modorutouroku=0x7f080037;
         public static final int nametextbox=0x7f080035;
-        public static final int naneigo=0x7f080027;
-        public static final int nankokugo=0x7f080024;
-        public static final int nanrika=0x7f080026;
-        public static final int nansansuu=0x7f080023;
-        public static final int nansyakai=0x7f080025;
-        public static final int nanzenbu=0x7f080022;
+        public static final int naneigo=0x7f080025;
+        public static final int nankokugo=0x7f080022;
+        public static final int nanrika=0x7f080024;
+        public static final int nansansuu=0x7f080027;
+        public static final int nansyakai=0x7f080023;
+        public static final int nanzenbu=0x7f080026;
         public static final int sanshi=0x7f080013;
         public static final int textView1=0x7f080009;
         public static final int textView2=0x7f080007;
@@ -82,7 +95,7 @@ public final class R {
         public static final int textView6=0x7f080032;
         public static final int textView7=0x7f080033;
         public static final int textView8=0x7f080034;
-        public static final int torofi=0x7f08002a;
+        public static final int torofi=0x7f080029;
         public static final int tsuduki=0x7f08000f;
         public static final int txt10=0x7f08002c;
         public static final int txt8=0x7f08002d;

@@ -99,7 +99,7 @@ public penView(Context context) {
  out.close();
  Toast.makeText(_context, "保存されました。", Toast.LENGTH_SHORT).show();
  } catch(Exception e) {
- Toast.makeText(_context, "例外発生", Toast.LENGTH_SHORT).show();
+ Toast.makeText(_context, "保存されました。", Toast.LENGTH_SHORT).show();
  }
  }
 

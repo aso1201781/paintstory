@@ -20,31 +20,13 @@
         android:textSize="25dp"
         android:width="40dp" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/goroku"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/punyan" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/goroku"
-        android:scaleType="fitEnd"
-        android:src="@drawable/mugiwara" />
-
     <Button
         android:id="@+id/goroku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/sanshi"
         android:layout_below="@+id/textView2"
-        android:background="#ADD8E6"
+        android:background="@drawable/koinukousagibtn"
         android:minHeight="80dp"
         android:minWidth="160dp"
         android:text="はじめる" />
@@ -76,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
-        android:background="#ADD8E6"
+        android:background="@drawable/koinukousagibtn"
         android:minHeight="80dp"
         android:minWidth="160dp"
         android:text="はじめる" />
@@ -98,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/sanshi"
         android:layout_below="@+id/textView1"
-        android:background="#ADD8E6"
+        android:background="@drawable/koinukousagibtn"
         android:minHeight="80dp"
         android:minWidth="160dp"
         android:text="はじめる" />

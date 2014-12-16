@@ -3,6 +3,7 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/nyanko"
     android:orientation="vertical" >
 
     <Button
@@ -21,19 +22,6 @@
         android:width="40dp" />
 
     <Button
-        android:id="@+id/nanzenbu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/nansansuu"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="52dp"
-        android:layout_marginLeft="19dp"
-        android:background="#F4A460"
-        android:minHeight="60dp"
-        android:minWidth="85dp"
-        android:text="ぜんぶ" />
-
-    <Button
         android:id="@+id/nankokugo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,18 +33,6 @@
         android:text="こくご" />
 
     <Button
-        android:id="@+id/nansansuu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/nankokugo"
-        android:layout_marginTop="14dp"
-        android:background="#1E90FF"
-        android:minHeight="60dp"
-        android:minWidth="85dp"
-        android:text="さんすう" />
-
-    <Button
         android:id="@+id/nansyakai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,18 +42,6 @@
         android:minHeight="60dp"
         android:minWidth="85dp"
         android:text="しゃかい" />
-
-    <Button
-        android:id="@+id/naneigo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/nanzenbu"
-        android:layout_marginBottom="26dp"
-        android:layout_toLeftOf="@+id/modoru7"
-        android:background="#F0E68C"
-        android:minHeight="60dp"
-        android:minWidth="85dp"
-        android:text="えいご" />
 
     <Button
         android:id="@+id/nanrika"
@@ -96,9 +60,46 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/nankokugo"
-        android:layout_alignTop="@+id/modoru7"
+        android:layout_marginTop="20dp"
         android:text="きょうかをえらんでね"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/naneigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nanzenbu"
+        android:layout_alignBottom="@+id/nanzenbu"
+        android:layout_alignLeft="@+id/nansyakai"
+        android:background="#F0E68C"
+        android:minHeight="60dp"
+        android:minWidth="85dp"
+        android:text="えいご" />
+
+    <Button
+        android:id="@+id/nansansuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/nanrika"
+        android:background="#1E90FF"
+        android:minHeight="60dp"
+        android:minWidth="85dp"
+        android:text="さんすう" />
+
+    <Button
+        android:id="@+id/nanzenbu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="38dp"
+        android:background="#F4A460"
+        android:minHeight="60dp"
+        android:minWidth="85dp"
+        android:text="ぜんぶ" />
 
 </RelativeLayout>

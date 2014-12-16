@@ -3,6 +3,7 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/hennano"
     android:orientation="vertical" >
 
     <Button
@@ -70,16 +71,6 @@
         android:minWidth="100dp"
         android:text="さんすう" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/modoru8"
-        android:layout_alignBottom="@+id/modoru8"
-        android:layout_alignLeft="@+id/husansuu"
-        android:text="きょうかをえらんでね"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
     <Button
         android:id="@+id/huzenbu"
         android:layout_width="wrap_content"
@@ -91,5 +82,14 @@
         android:minHeight="60dp"
         android:minWidth="100dp"
         android:text="ぜんぶ" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/husansuu"
+        android:layout_alignTop="@+id/modoru8"
+        android:text="きょうかをえらんでね"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
